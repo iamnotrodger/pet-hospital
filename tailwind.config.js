@@ -4,8 +4,8 @@ module.exports = {
     theme: {
         extend: {},
         fontFamily: {
-            sans: ['Roboto', 'sans-serif'],
-            serif: ['Lora', 'serif'],
+            sans: ['Roboto Condensed', 'sans-serif'],
+            serif: ['Cabin', 'sans-serif'],
         },
     },
     variants: {
