@@ -11,7 +11,7 @@ const ExpertCard = ({
 }) => {
     return (
         <Card disabled={disabled} onClick={onClick}>
-            <figure className='flex items-center md:items-stretch p-6 md:p-0 bg-white'>
+            <figure className='flex items-center md:items-stretch p-6 md:p-0 bg-white hover:bg-gray-50'>
                 <img
                     src={photo}
                     alt='doctor'

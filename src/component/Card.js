@@ -13,6 +13,6 @@ const Card = ({ children, disabled = false, ...props }) => {
 };
 
 const clickUtilClasses =
-    'transform hover:bg-gray-50 active:shadow-md active:scale-95 transition-all cursor-pointer';
+    'transform active:shadow-md active:scale-95 transition-all cursor-pointer';
 
 export default Card;
