@@ -1,15 +1,16 @@
 import React from 'react';
+import Card from './Card';
 
-const ServiceCard = ({ Icon, label, onClick }) => {
+const ServiceCard = ({ Icon, label, onClick, disabled = false }) => {
     return (
-        <div
-            className='p-8 rounded-lg shadow-xl text-center bg-white hover:bg-gray-50 active:shadow-md transition-all cursor-pointer'
-            onClick={onClick}>
-            {Icon}
-            <p className='inline font-sans font-bold text-base text-black'>
-                {label}
-            </p>
-        </div>
+        <Card onClick={onClick} disabled={disabled}>
+            <div className='p-6 text-center bg-white'>
+                {Icon}
+                <p className='inline font-sans font-bold text-base md:text-lg  text-black'>
+                    {label}
+                </p>
+            </div>
+        </Card>
     );
 };
 
