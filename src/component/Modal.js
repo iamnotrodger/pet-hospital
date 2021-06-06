@@ -18,7 +18,6 @@ const Modal = ({
                 }`}
                 onClick={!fixed && onClose}
             />
-            {/* <div className='w-full h-full'>{children}</div> */}
             {children}
         </div>,
         document.getElementById('portal'),
