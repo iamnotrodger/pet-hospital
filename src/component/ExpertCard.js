@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from './Card';
+import ShowMore from './ShowMore';
 
 const ExpertCard = ({
     photo,
@@ -9,25 +10,37 @@ const ExpertCard = ({
     disabled = false,
     onClick,
 }) => {
+    const [showMore, setShowMore] = useState(false);
+
+    const handleShowMore = (event) => {
+        event.stopPropagation();
+        setShowMore(!showMore);
+    };
+
     return (
         <Card disabled={disabled} onClick={onClick}>
-            <figure className='flex items-center md:items-stretch p-6 md:p-0 bg-white hover:bg-gray-50'>
+            <figure className='grid grid-cols-experts gap-x-8 items-start md:items-stretch p-6 md:p-0 bg-white hover:bg-gray-50'>
                 <img
                     src={photo}
                     alt='doctor'
-                    className='w-20 h-20 md:w-48 object-cover md:h-auto rounded-full md:rounded-none'
+                    className='col-span-1 row-span-3 w-20 h-20 md:w-48 object-cover md:h-auto rounded-full md:rounded-none'
                 />
-                <div className='text-base md:text-lg pl-8 md:p-8'>
-                    <figcaption className='font-bold'>
-                        <div className='text-black'>{name}</div>
-                        <div className='text-blue-500'>{role}</div>
-                    </figcaption>
-                    <blockquote className='hidden md:block'>
-                        <p className='font-serif text-gray-500'>
-                            "{description}"
-                        </p>
-                    </blockquote>
+
+                <figcaption className='font-bold md:mt-6 md:mr-6'>
+                    <div className='text-black'>{name}</div>
+                    <div className='text-blue-500'>{role}</div>
+                </figcaption>
+
+                <div className='md:hidden inline-flex mt-1'>
+                    <ShowMore active={showMore} onClick={handleShowMore} />
                 </div>
+
+                <blockquote
+                    className={`${
+                        !showMore ? 'hidden' : 'col-span-full mt-2'
+                    } md:block md:mr-6 md:col-span-1 md:mb-6`}>
+                    <p className='font-serif text-gray-500'>"{description}"</p>
+                </blockquote>
             </figure>
         </Card>
     );

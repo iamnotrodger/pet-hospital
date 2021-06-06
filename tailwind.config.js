@@ -5,6 +5,7 @@ module.exports = {
         extend: {
             gridTemplateColumns: {
                 services: 'repeat(auto-fill, minmax(125px, 1fr))',
+                experts: 'max-content 1fr',
             },
         },
         fontFamily: {
