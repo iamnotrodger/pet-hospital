@@ -5,7 +5,11 @@ const ServiceList = ({ list }) => {
     return (
         <div className='grid grid-cols-services auto-rows-fr gap-6'>
             {list.map((service, i) => (
-                <ServiceCard key={i} label={service.label} />
+                <ServiceCard
+                    key={i}
+                    label={service.label}
+                    icon={service.icon}
+                />
             ))}
         </div>
     );
