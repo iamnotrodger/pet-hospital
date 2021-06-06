@@ -3,6 +3,10 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {},
+        fontFamily: {
+            sans: ['Roboto', 'sans-serif'],
+            serif: ['Lora', 'serif'],
+        },
     },
     variants: {
         extend: {},
