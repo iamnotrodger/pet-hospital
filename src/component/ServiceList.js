@@ -7,8 +7,9 @@ const ServiceList = ({ list }) => {
             {list.map((service, i) => (
                 <ServiceCard
                     key={i}
-                    label={service.label}
                     icon={service.icon}
+                    label={service.label}
+                    description={service.description}
                 />
             ))}
         </div>
