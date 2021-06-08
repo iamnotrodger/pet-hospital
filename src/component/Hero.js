@@ -1,13 +1,14 @@
-import React from 'react';
-import { LocationMarkerIcon } from '@heroicons/react/solid';
 import { ArrowCircleRightIcon } from '@heroicons/react/outline';
+import { LocationMarkerIcon } from '@heroicons/react/solid';
+import React from 'react';
+import HeroImg from '../img/hero.jpeg';
 
 const Hero = () => {
     return (
         <header className='relative h-screen bg-blue-400 overflow-hidden'>
             <div className='absolute top-0 bottom-0 md:left-1/3 lg:left-1/4 right-0 hidden md:block z-0'>
                 <img
-                    src='https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2020%2F10%2F13%2Fcorgi-dog-POPDOGNAME1020.jpg'
+                    src={HeroImg}
                     alt='hero'
                     className='object-cover w-auto h-full'
                 />
