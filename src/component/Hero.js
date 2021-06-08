@@ -36,14 +36,14 @@ const Hero = () => {
                     </p>
                 </div>
 
-                <div className='mt-32 md:mt-11'>
+                <div className='mt-32 md:mt-11 group'>
                     <a
                         href='#schedule'
-                        className='w-max flex items-center  py-2 px-3 rounded-full bg-white shadow-md transform filter hover:brightness-90 active:shadow-md active:scale-95 transition-all'>
-                        <div className='font-bold text-xl text-blue-400'>
-                            Schedule Appointment
+                        className='w-max flex items-center  py-2 px-3 rounded-full bg-white shadow-md transform active:shadow-md active:scale-95 transition-all'>
+                        <div className='font-bold text-xl text-blue-400 group-hover:text-blue-500'>
+                            Schedule your appointment
                         </div>
-                        <ArrowCircleRightIcon className='w-9 h-9 ml-2 text-red-400' />
+                        <ArrowCircleRightIcon className='w-9 h-9 ml-2 text-red-400 transform group-hover:translate-x-1 group-hover:text-red-500 transition-all' />
                     </a>
                 </div>
             </div>
