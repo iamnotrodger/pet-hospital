@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import Card from './Card';
 import ShowMore from './ShowMore';
+import { CheckIcon } from '@heroicons/react/solid';
 
 const ExpertCard = ({
     photo,
     name,
     role,
     description,
+    selected = false,
     disabled = false,
     onClick,
 }) => {
@@ -18,8 +20,20 @@ const ExpertCard = ({
     };
 
     return (
-        <Card disabled={disabled} onClick={onClick}>
-            <figure className='grid grid-cols-experts gap-x-8 items-start md:items-stretch p-6 md:p-0 bg-white hover:bg-gray-50'>
+        <Card disabled={disabled} selected={selected}>
+            <figure
+                className='relative grid grid-cols-experts gap-x-8 items-start md:items-stretch p-6 md:p-0 bg-white hover:bg-gray-50'
+                onClick={onClick}>
+                {selected && (
+                    <div className='absolute top-0 right-0 p-1 bg-blue-500 rounded-bl-lg'>
+                        <CheckIcon
+                            className='w-5 h-5 lg:w-7 lg:h-7 text-white'
+                            fill='currentColor'
+                            viewBox='0 0 24 24'
+                        />
+                    </div>
+                )}
+
                 <img
                     src={photo}
                     alt='doctor'
