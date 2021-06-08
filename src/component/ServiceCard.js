@@ -22,13 +22,13 @@ const ServiceCard = ({
     return (
         <Card onClick={onClick} disabled={disabled}>
             <div
-                className={`relative flex flex-col items-center h-full p-6 text-center ${
+                className={`relative flex flex-col justify-center items-center h-full p-6 lg:p-8 text-center ${
                     selected
                         ? 'text-white bg-blue-400 hover:bg-blue-500'
                         : 'bg-white text-black hover:bg-gray-50'
                 } `}>
                 <InformationCircleIcon
-                    className={`absolute top-0 right-0 w-5 h-5 m-2 ${
+                    className={`absolute top-0 right-0 w-5 h-5 lg:w-7 lg:h-7 m-2 ${
                         selected ? 'text-gray-50' : 'text-gray-400'
                     } hover:text-black active:text-black transition-all`}
                     onClick={handleModalClick}
@@ -36,12 +36,12 @@ const ServiceCard = ({
                 <div className='mb-3'>
                     <Icon
                         name={icon}
-                        className='w-8 h-8'
+                        className='w-8 h-8 lg:w-10 lg:h-10'
                         fill='currentColor'
                         viewBox='0 0 24 24'
                     />
                 </div>
-                <div className='inline font-sans font-bold text-base leading-none md:text-lg md:leading-none line-clamp-2'>
+                <div className='inline font-sans font-bold text-base leading-none lg:text-xl line-clamp-2'>
                     {label}
                 </div>
             </div>
