@@ -20,9 +20,10 @@ const ServiceCard = ({
     };
 
     return (
-        <Card onClick={onClick} disabled={disabled}>
+        <Card disabled={disabled} selected={selected}>
             <div
-                className={`relative flex flex-col justify-center items-center h-full p-6 lg:p-8 text-center ${
+                onClick={onClick}
+                className={`relative flex flex-col items-center h-full p-6 lg:p-8 text-center ${
                     selected
                         ? 'text-white bg-blue-400 hover:bg-blue-500'
                         : 'bg-white text-black hover:bg-gray-50'
