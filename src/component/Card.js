@@ -1,11 +1,13 @@
 import React from 'react';
 
-const Card = ({ children, disabled = false, ...props }) => {
+const Card = ({ children, selected = false, disabled = false, ...props }) => {
     return (
         <div
-            className={`rounded-lg shadow-xl overflow-hidden ${
+            className={`rounded-lg ${
+                !selected ? 'shadow-xl' : 'shadow'
+            } overflow-hidden ${
                 !disabled ? clickUtilClasses : ''
-            }`}
+            } transition-all`}
             {...props}>
             {children}
         </div>
@@ -13,6 +15,6 @@ const Card = ({ children, disabled = false, ...props }) => {
 };
 
 const clickUtilClasses =
-    'transform active:shadow-md active:scale-95 transition-all cursor-pointer';
+    'transform active:shadow-md active:scale-95 cursor-pointer';
 
 export default Card;
