@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/pet-hospital/static/css/main.a988d5f5.chunk.css",
-    "main.js": "/pet-hospital/static/js/main.445c7888.chunk.js",
-    "main.js.map": "/pet-hospital/static/js/main.445c7888.chunk.js.map",
+    "main.js": "/pet-hospital/static/js/main.00cf13ab.chunk.js",
+    "main.js.map": "/pet-hospital/static/js/main.00cf13ab.chunk.js.map",
     "runtime-main.js": "/pet-hospital/static/js/runtime-main.8e218b0c.js",
     "runtime-main.js.map": "/pet-hospital/static/js/runtime-main.8e218b0c.js.map",
     "static/css/2.d0f7e5cf.chunk.css": "/pet-hospital/static/css/2.d0f7e5cf.chunk.css",
@@ -34,6 +34,6 @@
     "static/css/2.d0f7e5cf.chunk.css",
     "static/js/2.680cf64d.chunk.js",
     "static/css/main.a988d5f5.chunk.css",
-    "static/js/main.445c7888.chunk.js"
+    "static/js/main.00cf13ab.chunk.js"
   ]
 }
