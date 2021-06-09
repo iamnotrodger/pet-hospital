@@ -22,7 +22,7 @@ const ExpertCard = ({
     return (
         <Card disabled={disabled} selected={selected}>
             <figure
-                className='relative grid grid-cols-experts gap-x-8 items-start md:items-stretch p-6 md:p-0 bg-white hover:bg-gray-50'
+                className='grid grid-cols-experts gap-x-8 items-start h-full md:items-stretch p-6 md:p-0 bg-white hover:bg-gray-50'
                 onClick={onClick}>
                 {selected && (
                     <div className='absolute top-0 right-0 p-1 bg-blue-500 rounded-bl-lg'>
@@ -40,8 +40,8 @@ const ExpertCard = ({
                     className='col-span-1 row-span-3 w-20 h-20 md:w-48 object-cover md:h-auto rounded-full md:rounded-none'
                 />
 
-                <figcaption className='font-bold md:mt-6 md:mr-6'>
-                    <div className='text-black'>{name}</div>
+                <figcaption className='font-bold md:mt-6 md:mr-6 leading-none'>
+                    <div className='text-black md:text-xl'>{name}</div>
                     <div className='text-blue-500'>{role}</div>
                 </figcaption>
 
