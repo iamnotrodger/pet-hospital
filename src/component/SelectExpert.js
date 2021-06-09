@@ -1,0 +1,34 @@
+import { useFormikContext } from 'formik';
+import React from 'react';
+import ExpertList from './ExpertList';
+import FormHeaderGroup from './FormHeaderGroup';
+
+const SelectExpert = ({ name, label = 'Choose expert', list, className }) => {
+    const { values, errors, touched, setFieldValue } = useFormikContext();
+
+    const handleClick = (selectedExpert) => {
+        const expert = values[name];
+        if (expert && selectedExpert && expert.id === selectedExpert.id) {
+            setFieldValue(name, null);
+        } else {
+            setFieldValue(name, selectedExpert);
+        }
+    };
+
+    return (
+        <div className={className}>
+            <FormHeaderGroup
+                label={label}
+                error={errors[name]}
+                visible={touched[name]}
+            />
+            <ExpertList
+                list={list}
+                selected={values[name]}
+                onClick={handleClick}
+            />
+        </div>
+    );
+};
+
+export default SelectExpert;
