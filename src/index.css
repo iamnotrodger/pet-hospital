@@ -5,3 +5,39 @@
 html {
     scroll-behavior: smooth;
 }
+
+.w-em-1 {
+    width: 1em;
+}
+
+.h-em-1 {
+    height: 1em;
+}
+
+.w-em-1-75 {
+    width: 1.75em;
+}
+
+.h-em-1-75 {
+    height: 1.75em;
+}
+
+.react-calendar__navigation__arrow {
+    @apply rounded;
+}
+
+.react-calendar__navigation__label {
+    @apply rounded;
+}
+
+.react-calendar__tile {
+    @apply rounded;
+}
+
+.react-calendar__tile--now {
+    @apply bg-yellow-400 text-white !important;
+}
+
+.react-calendar__tile--active {
+    @apply bg-blue-500 text-white !important;
+}
