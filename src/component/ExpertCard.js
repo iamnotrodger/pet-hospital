@@ -51,8 +51,8 @@ const ExpertCard = ({
 
                 <blockquote
                     className={`${
-                        !showMore ? 'hidden' : 'col-span-full mt-2'
-                    } md:block md:mr-6 md:col-span-1 md:mb-6`}>
+                        !showMore ? 'hidden' : 'col-span-full '
+                    } md:block mt-2 md:mr-6 md:col-span-1 md:mb-6`}>
                     <p className='font-serif text-gray-500'>"{description}"</p>
                 </blockquote>
             </figure>
