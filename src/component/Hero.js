@@ -1,14 +1,13 @@
 import { ArrowCircleRightIcon } from '@heroicons/react/outline';
 import { LocationMarkerIcon } from '@heroicons/react/solid';
 import React from 'react';
-import HeroImg from '../img/hero.jpeg';
 
 const Hero = () => {
     return (
         <header className='relative h-screen bg-blue-400 overflow-hidden'>
             <div className='absolute top-0 bottom-0 md:left-1/3 lg:left-1/4 right-0 hidden md:block z-0'>
                 <img
-                    src={HeroImg}
+                    src='/img/hero.jpeg'
                     alt='hero'
                     className='object-cover w-auto h-full'
                 />
