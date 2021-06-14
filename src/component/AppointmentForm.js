@@ -39,24 +39,6 @@ const AppointmentForm = () => {
                     Schedule your appointment today
                 </h2>
             </div>
-            <div className='col-span-full md:col-span-1'>
-                <FormHeader>Why you should go to Pet Hospital!</FormHeader>
-                <p className='font-serif text-lg text-gray-800'>
-                    From vaccinations and wellness programs to complete surgical
-                    care, Pet Hospital utilizes the latest in technology while
-                    caring for your loved ones. We are fully computerized, with
-                    modern veterinary software, in-house diagnostic lab, digital
-                    whole-body and dental radiographs, and the ability to
-                    perform complex imaging including ultrasounds and
-                    echocardiograms.
-                </p>
-            </div>
-            <FormCalendar
-                name='date'
-                id='date'
-                label='Book a date'
-                className='col-span-full md:col-span-1'
-            />
             <SelectServices
                 name='services'
                 id='services'
@@ -70,7 +52,13 @@ const AppointmentForm = () => {
                 list={mockExperts}
                 className='col-span-full'
             />
-            <div className='col-span-full'>
+            <FormCalendar
+                name='date'
+                id='date'
+                label='Book a date'
+                className='col-span-full md:col-span-1 h-full'
+            />
+            <div className='col-span-full md:col-span-1'>
                 <FormGroup className='max-w-2xl m-auto' id='contact'>
                     <FormHeader>Contact Information</FormHeader>
                     <FormInput name='name' label='Name' placeholder='name' />

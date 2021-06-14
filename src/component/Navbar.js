@@ -18,13 +18,13 @@ const Navbar = ({ className = '' }) => {
                 </h1>
             </div>
             <div className='grid grid-cols-4 items-center gap-3 md:gap-5'>
-                <NavItem href='#date' Icon={CalendarIcon} label='Date' />
                 <NavItem
                     href='#services'
                     Icon={GeneralMedicineIcon}
                     viewBox='0 0 24 24'
                 />
                 <NavItem href='#expert' Icon={UserGroupIcon} label='Services' />
+                <NavItem href='#date' Icon={CalendarIcon} label='Date' />
                 <NavItem href='#contact' />
             </div>
         </nav>
