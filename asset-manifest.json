@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/pet-hospital/static/css/main.a988d5f5.chunk.css",
-    "main.js": "/pet-hospital/static/js/main.00cf13ab.chunk.js",
-    "main.js.map": "/pet-hospital/static/js/main.00cf13ab.chunk.js.map",
+    "main.css": "/pet-hospital/static/css/main.d12a2ba1.chunk.css",
+    "main.js": "/pet-hospital/static/js/main.e57de6fe.chunk.js",
+    "main.js.map": "/pet-hospital/static/js/main.e57de6fe.chunk.js.map",
     "runtime-main.js": "/pet-hospital/static/js/runtime-main.8e218b0c.js",
     "runtime-main.js.map": "/pet-hospital/static/js/runtime-main.8e218b0c.js.map",
     "static/css/2.d0f7e5cf.chunk.css": "/pet-hospital/static/css/2.d0f7e5cf.chunk.css",
-    "static/js/2.680cf64d.chunk.js": "/pet-hospital/static/js/2.680cf64d.chunk.js",
-    "static/js/2.680cf64d.chunk.js.map": "/pet-hospital/static/js/2.680cf64d.chunk.js.map",
+    "static/js/2.08f0f41e.chunk.js": "/pet-hospital/static/js/2.08f0f41e.chunk.js",
+    "static/js/2.08f0f41e.chunk.js.map": "/pet-hospital/static/js/2.08f0f41e.chunk.js.map",
     "static/js/3.70d2baf5.chunk.js": "/pet-hospital/static/js/3.70d2baf5.chunk.js",
     "static/js/3.70d2baf5.chunk.js.map": "/pet-hospital/static/js/3.70d2baf5.chunk.js.map",
     "static/js/4.9d9f6865.chunk.js": "/pet-hospital/static/js/4.9d9f6865.chunk.js",
@@ -26,14 +26,15 @@
     "static/js/10.22081d62.chunk.js.map": "/pet-hospital/static/js/10.22081d62.chunk.js.map",
     "index.html": "/pet-hospital/index.html",
     "static/css/2.d0f7e5cf.chunk.css.map": "/pet-hospital/static/css/2.d0f7e5cf.chunk.css.map",
-    "static/css/main.a988d5f5.chunk.css.map": "/pet-hospital/static/css/main.a988d5f5.chunk.css.map",
-    "static/js/2.680cf64d.chunk.js.LICENSE.txt": "/pet-hospital/static/js/2.680cf64d.chunk.js.LICENSE.txt"
+    "static/css/main.d12a2ba1.chunk.css.map": "/pet-hospital/static/css/main.d12a2ba1.chunk.css.map",
+    "static/js/2.08f0f41e.chunk.js.LICENSE.txt": "/pet-hospital/static/js/2.08f0f41e.chunk.js.LICENSE.txt",
+    "static/media/general-medicine.6aab6bb6.svg": "/pet-hospital/static/media/general-medicine.6aab6bb6.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8e218b0c.js",
     "static/css/2.d0f7e5cf.chunk.css",
-    "static/js/2.680cf64d.chunk.js",
-    "static/css/main.a988d5f5.chunk.css",
-    "static/js/main.00cf13ab.chunk.js"
+    "static/js/2.08f0f41e.chunk.js",
+    "static/css/main.d12a2ba1.chunk.css",
+    "static/js/main.e57de6fe.chunk.js"
   ]
 }
