@@ -4,11 +4,11 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import FormHeaderGroup from './FormHeaderGroup';
 
-const FormCalendar = ({ name, label = 'Date', className }) => {
+const FormCalendar = ({ name, id, label = 'Date', className }) => {
     const { values, errors, touched, setFieldValue } = useFormikContext();
 
     return (
-        <div className={className}>
+        <div className={className} id={id}>
             <FormHeaderGroup
                 label={label}
                 error={errors[name]}

@@ -50,22 +50,25 @@ const AppointmentForm = () => {
             </div>
             <FormCalendar
                 name='date'
+                id='date'
                 label='Book a date'
                 className='col-span-full md:col-span-1'
             />
             <SelectServices
                 name='services'
+                id='services'
                 list={mockServices}
                 className='col-span-full'
             />
             <SelectExpert
                 name='expert'
+                id='expert'
                 label='Available veterinaries'
                 list={mockExperts}
                 className='col-span-full'
             />
             <div className='col-span-full'>
-                <FormGroup className='max-w-2xl m-auto'>
+                <FormGroup className='max-w-2xl m-auto' id='contact'>
                     <FormHeader>Contact Information</FormHeader>
                     <FormInput name='name' label='Name' placeholder='name' />
                     <FormInput

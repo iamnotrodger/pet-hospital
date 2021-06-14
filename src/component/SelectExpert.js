@@ -3,7 +3,13 @@ import React from 'react';
 import ExpertList from './ExpertList';
 import FormHeaderGroup from './FormHeaderGroup';
 
-const SelectExpert = ({ name, label = 'Choose expert', list, className }) => {
+const SelectExpert = ({
+    name,
+    id,
+    label = 'Choose expert',
+    list,
+    className,
+}) => {
     const { values, errors, touched, setFieldValue } = useFormikContext();
 
     const handleClick = (selectedExpert) => {
@@ -16,7 +22,7 @@ const SelectExpert = ({ name, label = 'Choose expert', list, className }) => {
     };
 
     return (
-        <div className={className}>
+        <div className={className} id={id}>
             <FormHeaderGroup
                 label={label}
                 error={errors[name]}

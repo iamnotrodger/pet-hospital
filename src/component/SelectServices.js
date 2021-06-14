@@ -5,6 +5,7 @@ import ServiceList from './ServiceList';
 
 const SelectServices = ({
     name,
+    id,
     label = 'Choose services',
     list,
     className,
@@ -26,7 +27,7 @@ const SelectServices = ({
     };
 
     return (
-        <div className={className}>
+        <div className={className} id={id}>
             <FormHeaderGroup
                 label={label}
                 error={errors[name]}
