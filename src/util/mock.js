@@ -46,7 +46,7 @@ export const mockServices = [
 export const mockExperts = [
     {
         id: 1,
-        photo: 'img/expert-1.jpeg',
+        photo: `${process.env.PUBLIC_URL}/img/expert-1.jpeg`,
         name: 'Dr. Rebecca Edwards',
         role: 'Doctor',
         description:
@@ -54,7 +54,7 @@ export const mockExperts = [
     },
     {
         id: 2,
-        photo: 'img/expert-2.jpeg',
+        photo: `${process.env.PUBLIC_URL}/img/expert-2.jpeg`,
         name: 'Dr. David Gonksy',
         role: 'Doctor',
         description:
@@ -62,7 +62,7 @@ export const mockExperts = [
     },
     {
         id: 3,
-        photo: 'img/expert-3.jpeg',
+        photo: `${process.env.PUBLIC_URL}/img/expert-3.jpeg`,
         name: 'Dr. Paula Pingue',
         role: 'Doctor',
         description:
@@ -70,7 +70,7 @@ export const mockExperts = [
     },
     {
         id: 4,
-        photo: 'img/expert-4.jpeg',
+        photo: `${process.env.PUBLIC_URL}/img/expert-4.jpeg`,
         name: 'Dr. Chinami Ikeda',
         role: 'Doctor',
         description:
