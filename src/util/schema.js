@@ -1,7 +1,6 @@
 import * as yup from 'yup';
 
-const phoneRegExp =
-    /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+const phoneRegExp = /^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}$/;
 
 export const AppointmentSchema = yup.object().shape({
     date: yup.date().nullable().required('Please select a date'),
@@ -25,4 +24,8 @@ export const AppointmentSchema = yup.object().shape({
         .string()
         .matches(phoneRegExp, 'Invalid phone number')
         .required('Phone is required'),
+    card: yup
+        .string()
+        .min(19, 'Invalid Credit Card')
+        .required('Credit card is required'),
 });

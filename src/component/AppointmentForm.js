@@ -1,8 +1,10 @@
 import React from 'react';
+import { formatCreditCard, formatPhoneNumber } from '../util/format';
 import { mockExperts, mockServices } from '../util/mock';
 import { AppointmentSchema } from '../util/schema';
 import Form from './Form';
 import FormCalendar from './FormCalendar';
+import FormFormatInput from './FormFormatInput';
 import FormGroup from './FormGroup';
 import FormHeader from './FormHeader';
 import FormInput from './FormInput';
@@ -25,6 +27,7 @@ const AppointmentForm = () => {
                 name: '',
                 email: '',
                 phone: '',
+                card: '',
             }}
             validationSchema={AppointmentSchema}
             onSubmit={handleSubmit}
@@ -77,11 +80,19 @@ const AppointmentForm = () => {
                         type='email'
                         placeholder='email'
                     />
-                    <FormInput
+                    <FormFormatInput
                         name='phone'
                         label='Phone Number'
                         type='tel'
                         placeholder='phone number'
+                        format={formatPhoneNumber}
+                    />
+                    <FormFormatInput
+                        name='card'
+                        label='Credit Card'
+                        type='tel'
+                        placeholder='credit card'
+                        format={formatCreditCard}
                     />
                 </FormGroup>
             </div>
