@@ -7,6 +7,7 @@ const SelectServices = ({
     name,
     id,
     label = 'Choose services',
+    Icon,
     list,
     className,
 }) => {
@@ -30,6 +31,7 @@ const SelectServices = ({
         <div className={className} id={id}>
             <FormHeaderGroup
                 label={label}
+                Icon={Icon}
                 error={errors[name]}
                 visible={touched[name]}
             />

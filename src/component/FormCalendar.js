@@ -9,6 +9,7 @@ const FormCalendar = ({
     name,
     id,
     label = 'Date',
+    Icon,
     unavailableDates = [],
     className,
 }) => {
@@ -18,6 +19,7 @@ const FormCalendar = ({
         <div className={className} id={id}>
             <FormHeaderGroup
                 label={label}
+                Icon={Icon}
                 error={errors[name]}
                 visible={touched[name]}
             />

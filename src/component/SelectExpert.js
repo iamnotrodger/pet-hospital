@@ -7,6 +7,7 @@ const SelectExpert = ({
     name,
     id,
     label = 'Choose expert',
+    Icon,
     list,
     className,
     onChange,
@@ -28,6 +29,7 @@ const SelectExpert = ({
         <div className={className} id={id}>
             <FormHeaderGroup
                 label={label}
+                Icon={Icon}
                 error={errors[name]}
                 visible={touched[name]}
             />

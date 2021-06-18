@@ -1,4 +1,6 @@
+import { CalendarIcon, UserGroupIcon, UserIcon } from '@heroicons/react/solid';
 import React, { useState } from 'react';
+import { ReactComponent as GeneralMedicineIcon } from '../icon/general-medicine.svg';
 import { getUnavailableDates } from '../util/date';
 import { formatCreditCard, formatPhoneNumber } from '../util/format';
 import { mockExperts, mockServices } from '../util/mock';
@@ -54,6 +56,7 @@ const AppointmentForm = () => {
             <SelectServices
                 name='services'
                 id='services'
+                Icon={GeneralMedicineIcon}
                 list={mockServices}
                 className='col-span-full'
             />
@@ -61,6 +64,7 @@ const AppointmentForm = () => {
                 name='expert'
                 id='expert'
                 label='Available veterinaries'
+                Icon={UserGroupIcon}
                 list={mockExperts}
                 className='col-span-full'
                 onChange={setExpert}
@@ -69,12 +73,13 @@ const AppointmentForm = () => {
                 name='date'
                 id='date'
                 label='Book a date'
+                Icon={CalendarIcon}
                 className='col-span-full md:col-span-1 h-full'
                 unavailableDates={unavailableDates}
             />
             <div className='col-span-full md:col-span-1'>
                 <FormGroup className='max-w-2xl m-auto' id='contact'>
-                    <FormHeader>Contact Information</FormHeader>
+                    <FormHeader Icon={UserIcon}>Contact Information</FormHeader>
                     <FormInput name='name' label='Name' placeholder='name' />
                     <FormInput
                         name='email'
