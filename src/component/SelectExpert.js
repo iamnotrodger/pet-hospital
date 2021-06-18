@@ -9,6 +9,7 @@ const SelectExpert = ({
     label = 'Choose expert',
     list,
     className,
+    onChange,
 }) => {
     const { values, errors, touched, setFieldValue } = useFormikContext();
 
@@ -16,8 +17,10 @@ const SelectExpert = ({
         const expert = values[name];
         if (expert && selectedExpert && expert.id === selectedExpert.id) {
             setFieldValue(name, null);
+            onChange(null);
         } else {
             setFieldValue(name, selectedExpert);
+            onChange(selectedExpert);
         }
     };
 

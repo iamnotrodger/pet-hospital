@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { getUnavailableDates } from '../util/date';
 import { formatCreditCard, formatPhoneNumber } from '../util/format';
 import { mockExperts, mockServices } from '../util/mock';
 import { AppointmentSchema } from '../util/schema';
@@ -13,6 +14,17 @@ import SelectExpert from './SelectExpert';
 import SelectServices from './SelectServices';
 
 const AppointmentForm = () => {
+    const [unavailableDates, setUnavailableDates] = useState([]);
+
+    const setExpert = (expert) => {
+        if (expert) {
+            const dates = getUnavailableDates(expert.id);
+            setUnavailableDates(dates);
+        } else {
+            setUnavailableDates([]);
+        }
+    };
+
     const handleSubmit = (data, { resetForm }) => {
         resetForm();
         console.log(data);
@@ -51,12 +63,14 @@ const AppointmentForm = () => {
                 label='Available veterinaries'
                 list={mockExperts}
                 className='col-span-full'
+                onChange={setExpert}
             />
             <FormCalendar
                 name='date'
                 id='date'
                 label='Book a date'
                 className='col-span-full md:col-span-1 h-full'
+                unavailableDates={unavailableDates}
             />
             <div className='col-span-full md:col-span-1'>
                 <FormGroup className='max-w-2xl m-auto' id='contact'>
